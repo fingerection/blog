@@ -66,9 +66,13 @@ Jekyll的主题好的真的不多，而且加上Jekyll3.x比较大的版本更�
 
 修改index.html的内容，使用Jekyll自带的 excerpt功能不是很理想，所以还是采用比较土的办法：
 
+{% raw %}
+
 	{{ post.content }} 
 	修改为
 	{{ post.content | truncatewords:50 | strip_html }}
+
+{% endraw %}
 
 ## 开始写一篇吧
 可以先在编辑器里写好后，把markdown直接复制到github网页中新建的md文件里。
@@ -85,4 +89,5 @@ Jekyll的主题好的真的不多，而且加上Jekyll3.x比较大的版本更�
 - 支持文件自动上传
 
 可能会更方便的功能：
+
 - 主题选择和编辑
