@@ -46,18 +46,22 @@ Jekyll的主题好的真的不多，而且加上Jekyll3.x比较大的版本更�
 	baseurl: /blog
 
 但这里又带来一个问题。github pages支持绑定到自己的域名，如果你绑定到了`blog.example.com` 的域名后，你是希望baser恢复到/而不是/blog下的。github上有个issue讨论这个问题：[链接](https://github.com/jekyll/jekyll/issues/332)，但最后也没有什么结果。我们暂时不绑定自定义的域名，所以就先在config中把baseurl改成/blog （github项目名是blog）
+
 **注意：部署到更新有一些延时的**，感觉是修改静态文件延时最大，更新post的话马上就能生效
 
 ## 开始写一篇吧
 可以先在编辑器里写好后，把markdown直接复制到github网页中新建的md文件里。
 在`_posts_`的文件格式参照其他文件就可以了。有几个注意的地方：
+
 1. 文件名的格式是固定的，用来指明创建时间
 2. 如果用ulysses工具生成markdown默认不会在`##`前空行，这可能导致二级标题或者代码段不能被识别出来。Jekyll中需要在`##`标记前空行。现在暂时只能在ulysses里写作时注意空行。
 3. 现在ulysses本地图片还不能自动上传。
 
 ## 未来的工作
 写一个mac上的app，支持ulysses一键发布到github pages。需要的主要功能：
+
 - 支持markdown兼容（比如上面说到的空行问题）
 - 支持文件自动上传
+
 可能会更方便的功能：
 - 主题选择和编辑
