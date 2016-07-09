@@ -5,15 +5,15 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            fingerection
+tagline:          'feel relax when coding'
+description:      '本博客记录日常技术工作中碰到的问题和解决方案，包括不限于JS，Python，Linux系统，数据分析'
+url:              https://fingerection.github.io/blog/
 baseurl:          /blog
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'fingerection'
+  url:            https://twitter.com/fingerection
 
 paginate:         5
 
@@ -21,7 +21,7 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/fingerection/blog
 
 # Gems
 gems: [jekyll-paginate]
