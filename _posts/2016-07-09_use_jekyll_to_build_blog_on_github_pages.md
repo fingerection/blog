@@ -9,43 +9,43 @@ Jekyll是一种静态网页生成工具，虽然有很多其他优秀的同类�
 Jekyll的主题好的真的不多，而且加上Jekyll3.x比较大的版本更新导致很多2.x的优秀框架都不兼容了，所以选择很窄，还需要自己试。最好的办法是看到github上好的Jekyll项目直接Clone一份。
 我选择了hyde主题，就遇到没有升级到3.x的问题。需要自己改一下`_config.yml`。
 
-'' Dependencies
-'' highlighter:      rouge
-'' 
-'' Permalinks
-'' permalink:        pretty
-'' 
-'' Setup
-'' title:            Hyde
-'' tagline:          'A Jekyll theme'
-'' description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-'' url:              http://hyde.getpoole.com
-'' baseurl:          /
-'' 
-'' author:
-''   name:           'Mark Otto'
-''   url:            https://twitter.com/mdo
-'' 
-'' paginate:         5
-'' 
-'' Custom vars
-'' version:          2.1.0
-'' 
-'' github:
-''   repo:           https://github.com/poole/hyde
-'' 
-'' Gems
-'' gems: [jekyll-paginate]
+	Dependencies
+	highlighter:      rouge
+	
+	Permalinks
+	permalink:        pretty
+	
+	Setup
+	title:            Hyde
+	tagline:          'A Jekyll theme'
+	description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+	url:              http://hyde.getpoole.com
+	baseurl:          /
+	
+	author:
+	  name:           'Mark Otto'
+	  url:            https://twitter.com/mdo
+	
+	paginate:         5
+	
+	Custom vars
+	version:          2.1.0
+	
+	github:
+	  repo:           https://github.com/poole/hyde
+	
+	Gems
+	gems: [jekyll-paginate]
 
 ## 部署到github
 直接用git工具push到gh-pages分支，你就能访问了。但是直接部署后你会发现css文件都404了。
 假如github pages的地址是 xxx.github.io/yyy，那么css的地址生成逻辑是：
-'' <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
 
 这里baseurl是`xxx.github.io`，所以就会访问 `xxx.github.io/public/css/poole.css`。一个临时的解决方法是在config里加上baseurl的选项
-''baseurl: /blog
+	baseurl: /blog
 
-但这里又带来一个问题。github pages支持绑定到自己的域名，如果你绑定到了`blog.example.com` 的域名后，你是希望baser恢复到/而不是/blog下的。github上有个issue讨论这个问题：[链接]，但最后也没有什么结果。我们暂时不绑定自定义的域名，所以就先在config中把baseurl改成/blog （github项目名是blog）
+但这里又带来一个问题。github pages支持绑定到自己的域名，如果你绑定到了`blog.example.com` 的域名后，你是希望baser恢复到/而不是/blog下的。github上有个issue讨论这个问题：[链接](https://github.com/jekyll/jekyll/issues/332)，但最后也没有什么结果。我们暂时不绑定自定义的域名，所以就先在config中把baseurl改成/blog （github项目名是blog）
 **注意：部署到更新有一些延时的**，感觉是修改静态文件延时最大，更新post的话马上就能生效
 
 ## 开始写一篇吧
