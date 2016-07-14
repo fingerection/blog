@@ -93,7 +93,8 @@ origin video from: [https://egghead.io/lessons/react-react-fundamentals-developm
 	    "webpack-dev-server": "^1.14.1"
 	  }
 	}
-	
+
+`console`
 
 	npm start
 
